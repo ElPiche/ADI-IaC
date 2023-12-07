@@ -1,0 +1,5 @@
+- name: Instalar Zabbix Agent 2 
+  hosts: all
+  tasks:
+    - name: Copiando y ejecutando deploy-zabbix-agent.sh
+      script: deploy-zabbix-agent.sh

@@ -1,0 +1,10 @@
+- name: Implementando Samba Active Directory Primary Domain Controller
+  hosts: lt-prod-ad1
+  tasks:
+    - name: Copiando y ejecutando deploy-ad.sh
+      script: deploy-ad.sh
+- name: Implementando Servidor Miembro
+  hosts: lt-prod-mem1
+  tasks:
+    - name: Copiando y ejecutando deploy-mem.sh
+      script: deploy-mem.sh
